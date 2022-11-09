@@ -17,6 +17,10 @@
 		584E2E7B280F2B4E0039B1FF /* ContasAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584E2E7A280F2B4E0039B1FF /* ContasAPI.swift */; };
 		584E2E85280F53830039B1FF /* Custom+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584E2E84280F53830039B1FF /* Custom+UIColor.swift */; };
 		584E2E9028105E480039B1FF /* ContaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584E2E8F28105E480039B1FF /* ContaViewController.swift */; };
+		D9CC82D9291C01BE0081E639 /* TransacaoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CC82D8291C01BE0081E639 /* TransacaoTableViewCell.swift */; };
+		D9CC82DC291C1AE50081E639 /* Transacao.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CC82DB291C1AE50081E639 /* Transacao.swift */; };
+		D9CC82DE291C257D0081E639 /* CustomPatterns+DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CC82DD291C257D0081E639 /* CustomPatterns+DateFormatter.swift */; };
+		D9CC82E0291C2CF70081E639 /* Conta.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CC82DF291C2CF70081E639 /* Conta.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		584E2E7A280F2B4E0039B1FF /* ContasAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContasAPI.swift; sourceTree = "<group>"; };
 		584E2E84280F53830039B1FF /* Custom+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Custom+UIColor.swift"; sourceTree = "<group>"; };
 		584E2E8F28105E480039B1FF /* ContaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaViewController.swift; sourceTree = "<group>"; };
+		D9CC82D8291C01BE0081E639 /* TransacaoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransacaoTableViewCell.swift; sourceTree = "<group>"; };
+		D9CC82DB291C1AE50081E639 /* Transacao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transacao.swift; sourceTree = "<group>"; };
+		D9CC82DD291C257D0081E639 /* CustomPatterns+DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CustomPatterns+DateFormatter.swift"; sourceTree = "<group>"; };
+		D9CC82DF291C2CF70081E639 /* Conta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conta.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +77,7 @@
 				584E2E89280F57DE0039B1FF /* Common */,
 				584E2E8E280F5B160039B1FF /* API */,
 				584E2E88280F576D0039B1FF /* View */,
+				D9CC82DA291C1A680081E639 /* Models */,
 				584E2E8A280F58290039B1FF /* Scenes */,
 			);
 			path = "LearningTask-6.2";
@@ -122,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				584E2E84280F53830039B1FF /* Custom+UIColor.swift */,
+				D9CC82DD291C257D0081E639 /* CustomPatterns+DateFormatter.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -131,6 +141,7 @@
 			children = (
 				584E2E71280DCC4C0039B1FF /* TableHeaderView.swift */,
 				584E2E73280EFDFD0039B1FF /* TransacaoImageView.swift */,
+				D9CC82D8291C01BE0081E639 /* TransacaoTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -141,6 +152,15 @@
 				584E2E7A280F2B4E0039B1FF /* ContasAPI.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		D9CC82DA291C1A680081E639 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D9CC82DB291C1AE50081E639 /* Transacao.swift */,
+				D9CC82DF291C2CF70081E639 /* Conta.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,10 +236,14 @@
 			files = (
 				584E2E74280EFDFD0039B1FF /* TransacaoImageView.swift in Sources */,
 				584E2E72280DCC4C0039B1FF /* TableHeaderView.swift in Sources */,
+				D9CC82E0291C2CF70081E639 /* Conta.swift in Sources */,
+				D9CC82DC291C1AE50081E639 /* Transacao.swift in Sources */,
 				584E2E7B280F2B4E0039B1FF /* ContasAPI.swift in Sources */,
 				584E2E85280F53830039B1FF /* Custom+UIColor.swift in Sources */,
 				584E2E9028105E480039B1FF /* ContaViewController.swift in Sources */,
+				D9CC82DE291C257D0081E639 /* CustomPatterns+DateFormatter.swift in Sources */,
 				584E2E5E280DC34F0039B1FF /* AppDelegate.swift in Sources */,
+				D9CC82D9291C01BE0081E639 /* TransacaoTableViewCell.swift in Sources */,
 				584E2E60280DC34F0039B1FF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

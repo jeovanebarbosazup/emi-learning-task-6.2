@@ -17,12 +17,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
         
-//        let contasAPI = ContasAPI()
-//        let contaSelecionada = Conta(saldoInicial: 99_999.90, montanteInvestido: 19_999.90, rendimentoMensalAtual: 199.90)
-//
-//        let controller = (window!.rootViewController as! UINavigationController).topViewController as! ContaViewController
-//        controller.contasAPI = contasAPI
-//        controller.conta = contaSelecionada
+        let contasAPI = ContasAPI()
+        let contaSelecionada = Conta(saldoInicial: 99_999.90, montanteInvestido: 19_999.90, rendimentoMensalAtual: 199.90)
+
+        let controller = (window!.rootViewController as! UINavigationController).topViewController as! ContaViewController
+        controller.contasAPI = contasAPI
+        controller.conta = contaSelecionada
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
