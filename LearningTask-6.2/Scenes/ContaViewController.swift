@@ -25,6 +25,8 @@ class ContaViewController: UITableViewController {
     
     func setupViews(){
         tableView.tableHeaderView = TableHeaderView.constroi(para: conta)
+        tableView.register(SectionTitle.self, forHeaderFooterViewReuseIdentifier: SectionTitle.reuseId)
+        tableView.sectionHeaderHeight = SectionTitle.heightConstant
     }
     
     func carregaHistorico(){
@@ -36,6 +38,7 @@ class ContaViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return conta.historico.count
     }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "TransacaoCell", for: indexPath) as? TransacaoTableViewCell else{
             fatalError("Não foi possível obter célula para a tabela")
@@ -44,6 +47,14 @@ class ContaViewController: UITableViewController {
         let transacao = conta.historico[indexPath.row]
         cell.setup(transacao)
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        guard let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: SectionTitle.reuseId) as? SectionTitle else{
+            fatalError("Não foi possível recuperar header view para a tabela")
+        }
+        headerView.titulo = "Histórico"
+        return headerView
     }
     
 }
