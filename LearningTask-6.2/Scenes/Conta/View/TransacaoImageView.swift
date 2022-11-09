@@ -8,8 +8,8 @@
 import UIKit
 
 @IBDesignable class TransacaoImageView: UIView {
-    // MARK: - Configuration support
-    
+////     MARK: - Configuration support
+//    
 //    private static var baseDimension: CGFloat = 48
 //    
 //    private var baseColor: UIColor {

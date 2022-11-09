@@ -16,7 +16,7 @@
 		584E2E74280EFDFD0039B1FF /* TransacaoImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584E2E73280EFDFD0039B1FF /* TransacaoImageView.swift */; };
 		584E2E7B280F2B4E0039B1FF /* ContasAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584E2E7A280F2B4E0039B1FF /* ContasAPI.swift */; };
 		584E2E85280F53830039B1FF /* Custom+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584E2E84280F53830039B1FF /* Custom+UIColor.swift */; };
-		584E2E9028105E480039B1FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584E2E8F28105E480039B1FF /* ViewController.swift */; };
+		584E2E9028105E480039B1FF /* ContaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584E2E8F28105E480039B1FF /* ContaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,7 @@
 		584E2E73280EFDFD0039B1FF /* TransacaoImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransacaoImageView.swift; sourceTree = "<group>"; };
 		584E2E7A280F2B4E0039B1FF /* ContasAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContasAPI.swift; sourceTree = "<group>"; };
 		584E2E84280F53830039B1FF /* Custom+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Custom+UIColor.swift"; sourceTree = "<group>"; };
-		584E2E8F28105E480039B1FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		584E2E8F28105E480039B1FF /* ContaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +104,7 @@
 		584E2E8A280F58290039B1FF /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				584E2E8F28105E480039B1FF /* ViewController.swift */,
+				584E2E8F28105E480039B1FF /* ContaViewController.swift */,
 				584E2E8B280F58600039B1FF /* Conta */,
 			);
 			path = Scenes;
@@ -218,7 +218,7 @@
 				584E2E72280DCC4C0039B1FF /* TableHeaderView.swift in Sources */,
 				584E2E7B280F2B4E0039B1FF /* ContasAPI.swift in Sources */,
 				584E2E85280F53830039B1FF /* Custom+UIColor.swift in Sources */,
-				584E2E9028105E480039B1FF /* ViewController.swift in Sources */,
+				584E2E9028105E480039B1FF /* ContaViewController.swift in Sources */,
 				584E2E5E280DC34F0039B1FF /* AppDelegate.swift in Sources */,
 				584E2E60280DC34F0039B1FF /* SceneDelegate.swift in Sources */,
 			);
