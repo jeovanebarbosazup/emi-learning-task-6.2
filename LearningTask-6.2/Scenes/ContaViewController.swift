@@ -19,6 +19,15 @@ class ContaViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupViews()
+        carregaHistorico()
+    }
+    
+    func setupViews(){
+        tableView.tableHeaderView = TableHeaderView.constroi(para: conta)
+    }
+    
+    func carregaHistorico(){
         if let contasAPI = contasAPI {
             conta.historico = contasAPI.carregaHistorico(para: conta)
         }
